@@ -1,9 +1,12 @@
 {
-    "rewrites": [
-      {
-        "source": "/(.*)",
-        "destination": "/"
-      }
-    ]
+  "rewrites": [
+    {
+      "source": "/webhooks/(.*)",
+      "destination": "/webhooks/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
 }
-
